@@ -1,1 +1,15 @@
-c2VydmljZXM6CiAgLSB0eXBlOiB3ZWIKICAgIG5hbWU6IGdyb3EtcHJveHkKICAgIHJ1bnRpbWU6IGdvCiAgICBwbGFuOiBmcmVlCiAgICByZWdpb246IG9yZWdvbgogICAgYnVpbGRDb21tYW5kOiBnbyBidWlsZCAtbyBwcm94eSAtbW9kPW1vZCAuLy4uLgogICAgc3RhcnRDb21tYW5kOiAuL3Byb3h5CiAgICBlbnZWYXJzOgogICAgICAtIGtleTogR1JPUV9BUElfS0VZCiAgICAgICAgc3luYzogZmFsc2UKICAgICAgLSBrZXk6IFBST1hZX1NFQ1JFVAogICAgICAgIHN5bmM6IGZhbHNlCiAgICAgIC0ga2V5OiBSQVRFX0xJTUlUX01BWAogICAgICAgIHZhbHVlOiAiMjAi
+services:
+  - type: web
+    name: groq-proxy
+    runtime: go
+    plan: free
+    region: oregon
+    buildCommand: go build -o proxy -mod=mod ./...
+    startCommand: ./proxy
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: PROXY_SECRET
+        sync: false
+      - key: RATE_LIMIT_MAX
+        value: "20"

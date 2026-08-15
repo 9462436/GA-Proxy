@@ -1,1 +1,64 @@
-cGFja2FnZSBtYWluCgppbXBvcnQgKAoJImJ5dGVzIgoJImlvIgoJIm5ldC9odHRwIgoJInN0cmluZ3MiCgoJImdpdGh1Yi5jb20vZ29maWJlci9maWJlci92MiIKKQoKLy8gcHJveHlSZXF1ZXN0IOaJi+WGmeeahOWPjeWQkeS7o+eQhiDigJTigJQg5a6M5pW05pSv5oyBIFNTRSDmtYHlvI8KZnVuYyBwcm94eVJlcXVlc3QoYyAqZmliZXIuQ3R4LCB0YXJnZXQsIGFwaUtleSBzdHJpbmcpIGVycm9yIHsKCXZhciBib2R5IGlvLlJlYWRlcgoJaWYgbGVuKGMuQm9keSgpKSA+IDAgewoJCWJvZHkgPSBieXRlcy5OZXdSZWFkZXIoYy5Cb2R5KCkpCgl9CgoJcmVxLCBlcnIgOj0gaHR0cC5OZXdSZXF1ZXN0KGMuTWV0aG9kKCksIHRhcmdldCwgYm9keSkKCWlmIGVyciAhPSBuaWwgewoJCXJldHVybiBjLlN0YXR1cyg1MDApLkpTT04oZmliZXIuTWFweyJlcnJvciI6IGVyci5FcnJvcigpfSkKCX0KCgkvLyDpgI/kvKDpmaTpibTmnYPkuYvlpJbnmoTmiYDmnInlpLQKCWMuUmVxdWVzdCgpLkhlYWRlci5WaXNpdEFsbChmdW5jKGssIHYgW11ieXRlKSB7CgkJa2V5IDo9IHN0cmluZyhrKQoJCWlmIHN0cmluZ3MuRXF1YWxGb2xkKGtleSwgIkF1dGhvcml6YXRpb24iKSB8fCBzdHJpbmdzLkVxdWFsRm9sZChrZXksICJIb3N0IikgewoJCQlyZXR1cm4KCQl9CgkJcmVxLkhlYWRlci5TZXQoa2V5LCBzdHJpbmcodikpCgl9KQoJcmVxLkhlYWRlci5TZXQoIkF1dGhvcml6YXRpb24iLCAiQmVhcmVyICIrYXBpS2V5KQoJcmVxLkhlYWRlci5TZXQoIkNvbnRlbnQtVHlwZSIsICJhcHBsaWNhdGlvbi9qc29uIikKCglyZXNwLCBlcnIgOj0gaHR0cENsaWVudC5EbyhyZXEpCglpZiBlcnIgIT0gbmlsIHsKCQlyZXR1cm4gYy5TdGF0dXMoNTAyKS5KU09OKGZpYmVyLk1hcHsiZXJyb3IiOiAidXBzdHJlYW0gZXJyb3I6ICIgKyBlcnIuRXJyb3IoKX0pCgl9CglkZWZlciByZXNwLkJvZHkuQ2xvc2UoKQoKCS8vIOmAj+S8oOWTjeW6lOWktAoJcmVzcC5IZWFkZXIuVmlzaXRBbGwoZnVuYyhrLCB2IFtdYnl0ZSkgewoJCWMuU2V0KHN0cmluZyhrKSwgc3RyaW5nKHYpKQoJfSkKCWMuU3RhdHVzKHJlc3AuU3RhdHVzQ29kZSkKCgkvLyBTU0Ug5rWB5byPIOKAlOKAlCDotbAgRmliZXIgU2V0Qm9keVN0cmVhbVdyaXRlcgoJY3QgOj0gc3RyaW5ncy5Ub0xvd2VyKHJlc3AuSGVhZGVyLkdldCgiQ29udGVudC1UeXBlIikpCglpZiBzdHJpbmdzLkNvbnRhaW5zKGN0LCAidGV4dC9ldmVudC1zdHJlYW0iKSB7CgkJYy5TZXQoIkNvbnRlbnQtVHlwZSIsICJ0ZXh0L2V2ZW50LXN0cmVhbSIpCgkJYy5TZXQoIkNhY2hlLUNvbnRyb2wiLCAibm8tY2FjaGUiKQoJCWMuUmVzcG9uc2UoKS5TZXRCb2R5U3RyZWFtKHJlc3AuQm9keSwgLTEpCgkJcmV0dXJuIG5pbAoJfQoKCS8vIOaZrumAmuWTjeW6lAoJcmF3LCBlcnIgOj0gaW8uUmVhZEFsbChyZXNwLkJvZHkpCglpZiBlcnIgIT0gbmlsIHsKCQlyZXR1cm4gYy5TdGF0dXMoNTAyKS5KU09OKGZpYmVyLk1hcHsiZXJyb3IiOiBlcnIuRXJyb3IoKX0pCgl9CglyZXR1cm4gYy5TZW5kKHJhdykKfQoKdmFyIGh0dHBDbGllbnQgPSAmaHR0cC5DbGllbnR7fQ==
+package main
+
+import (
+	"bytes"
+	"io"
+	"net/http"
+	"strings"
+
+	"github.com/gofiber/fiber/v2"
+)
+
+// proxyRequest 手写的反向代理 —— 完整支持 SSE 流式
+func proxyRequest(c *fiber.Ctx, target, apiKey string) error {
+	var body io.Reader
+	if len(c.Body()) > 0 {
+		body = bytes.NewReader(c.Body())
+	}
+
+	req, err := http.NewRequest(c.Method(), target, body)
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+	}
+
+	// 透传除鉴权之外的所有头
+	c.Request().Header.VisitAll(func(k, v []byte) {
+		key := string(k)
+		if strings.EqualFold(key, "Authorization") || strings.EqualFold(key, "Host") {
+			return
+		}
+		req.Header.Set(key, string(v))
+	})
+	req.Header.Set("Authorization", "Bearer "+apiKey)
+	req.Header.Set("Content-Type", "application/json")
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		return c.Status(502).JSON(fiber.Map{"error": "upstream error: " + err.Error()})
+	}
+	defer resp.Body.Close()
+
+	// 透传响应头
+	resp.Header.VisitAll(func(k, v []byte) {
+		c.Set(string(k), string(v))
+	})
+	c.Status(resp.StatusCode)
+
+	// SSE 流式 —— 走 Fiber SetBodyStreamWriter
+	ct := strings.ToLower(resp.Header.Get("Content-Type"))
+	if strings.Contains(ct, "text/event-stream") {
+		c.Set("Content-Type", "text/event-stream")
+		c.Set("Cache-Control", "no-cache")
+		c.Response().SetBodyStream(resp.Body, -1)
+		return nil
+	}
+
+	// 普通响应
+	raw, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return c.Status(502).JSON(fiber.Map{"error": err.Error()})
+	}
+	return c.Send(raw)
+}
+
+var httpClient = &http.Client{}

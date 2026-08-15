@@ -1,1 +1,5 @@
-bW9kdWxlIGdyb3EtcHJveHkKCmdvIDEuMjEKCnJlcXVpcmUgZ2l0aHViLmNvbS9nb2ZpYmVyL2ZpYmVyL3YyIHYyLjUyLjU=
+module groq-proxy
+
+go 1.21
+
+require github.com/gofiber/fiber/v2 v2.52.5

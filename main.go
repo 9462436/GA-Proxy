@@ -1,1 +1,158 @@
-cGFja2FnZSBtYWluCgppbXBvcnQgKAoJImZtdCIKCSJsb2ciCgkib3MiCgkidGltZSIKCgkiZ2l0aHViLmNvbS9nb2ZpYmVyL2ZpYmVyL3YyIgoJImdpdGh1Yi5jb20vZ29maWJlci9maWJlci92Mi9taWRkbGV3YXJlL2NvcnMiCgkiZ2l0aHViLmNvbS9nb2ZpYmVyL2ZpYmVyL3YyL21pZGRsZXdhcmUvbGltaXRlciIKCSJnaXRodWIuY29tL2dvZmliZXIvZmliZXIvdjIvbWlkZGxld2FyZS9sb2dnZXIiCgkiZ2l0aHViLmNvbS9qb2hvL2dvZG90ZW52IgopCgpjb25zdCBWZXJzaW9uID0gIjEuMC4wIgoKLy8gSGFzaEtleSDnuq8gR28g5a6e546w55qE5a6J5YWo5o+h5omL562+5ZCN77yI5pu/5Luj5Y6fIFBsYW4gOSDmsYfnvJYgT2JmdXNjYXRl77yJCi8vIOWuouaIt+err+WPr+WvueavlCBzaWduYXR1cmUg5piv5ZCm5LiO5pyN5Yqh56uv5LiA6Ie0CmZ1bmMgSGFzaEtleShjaGFsbGVuZ2UgdWludDY0LCBzZWNyZXQgc3RyaW5nKSBzdHJpbmcgewoJa2V5IDo9IHVpbnQ2NCgwKQoJZm9yIF8sIGNoIDo9IHJhbmdlIHNlY3JldCB7CgkJa2V5ICs9IHVpbnQ2NChjaCkKCX0KCXJldHVybiBmbXQuU3ByaW50ZigiJXgiLCBjaGFsbGVuZ2Vea2V5KQp9CgpmdW5jIG1haW4oKSB7CglfID0gZ29kb3RlbnYuTG9hZCgpCgoJYXBwIDo9IGZpYmVyLk5ldyhmaWJlci5Db25maWd7CgkJQXBwTmFtZTogImdyb3EtcHJveHktdiIgKyBWZXJzaW9uLAoJfSkKCglhcHAuVXNlKGxvZ2dlci5OZXcoKSkKCWFwcC5Vc2UoY29ycy5OZXcoKSkKCgltYXhSZXFzIDo9IDIwCglmbXQuU3NjYW5mKG9zLkdldGVudigiUkFURV9MSU1JVF9NQVgiKSwgIiVkIiwgJm1heFJlcXMpCgoJYXBwLlVzZShsaW1pdGVyLk5ldyhsaW1pdGVyLkNvbmZpZ3sKCQlNYXg6ICAgICAgICBtYXhSZXFzLAoJCUV4cGlyYXRpb246IDEgKiB0aW1lLk1pbnV0ZSwKCQlLZXlHZW5lcmF0b3I6IGZ1bmMoYyAqZmliZXIuQ3R4KSBzdHJpbmcgewoJCQlyZXR1cm4gYy5JUCgpCgkJfSwKCQlMaW1pdFJlYWNoZWQ6IGZ1bmMoYyAqZmliZXIuQ3R4KSBlcnJvciB7CgkJCXJldHVybiBjLlN0YXR1cyg0MjkpLkpTT04oZmliZXIuTWFwewoJCQkJImVycm9yIjogICAgICAgIlJhdGUgbGltaXQgZXhjZWVkZWQiLAoJCQkJInJldHJ5X2FmdGVyIjogIjEgbWludXRlIiwKCQkJfSkKCQl9LAoJfSkpCgoJYXBwLlVzZShmdW5jKGMgKmZpYmVyLkN0eCkgZXJyb3IgewoJCXNlY3JldCA6PSBvcy5HZXRlbnYoIlBST1hZX1NFQ1JFVCIpCgkJaWYgc2VjcmV0ID09ICIiIHsKCQkJcmV0dXJuIGMuTmV4dCgpCgkJfQoJCWlmIGMuUGF0aCgpID09ICIvIiB8fCBjLlBhdGgoKSA9PSAiL2hhbmRzaGFrZSIgfHwgYy5QYXRoKCkgPT0gIi92ZXJzaW9uIiB7CgkJCXJldHVybiBjLk5leHQoKQoJCX0KCQlpZiBjLkdldCgiWC1HQS1TZWNyZXQiKSAhPSBzZWNyZXQgewoJCQlyZXR1cm4gYy5TdGF0dXMoNDAzKS5KU09OKGZpYmVyLk1hcHsiZXJyb3IiOiAiVW5hdXRob3JpemVkOiBJbnZhbGlkIEdBIFNlY3JldCJ9KQoJCX0KCQlyZXR1cm4gYy5OZXh0KCkKCX0pCgoJYXBwLkdldCgiL3ZlcnNpb24iLCBmdW5jKGMgKmZpYmVyLkN0eCkgZXJyb3IgewoJCXJldHVybiBjLkpTT04oZmliZXIuTWFweyJ2ZXJzaW9uIjogVmVyc2lvbn0pCgl9KQoKCWFwcC5HZXQoIi9oYW5kc2hha2UiLCBmdW5jKGMgKmZpYmVyLkN0eCkgZXJyb3IgewoJCWNoYWxsZW5nZSA6PSBjLlF1ZXJ5SW50KCJjaGFsbGVuZ2UiLCAwKQoJCXNlY3JldCA6PSBvcy5HZXRlbnYoIlBST1hZX1NFQ1JFVCIpCgkJaWYgc2VjcmV0ID09ICIiIHsKCQkJc2VjcmV0ID0gIkdBLURFRkFVTFQtU0VDUkVUIgoJCX0KCQl2YXIgc2VydmljZXMgW11zdHJpbmcKCQlpZiBvcy5HZXRlbnYoIkdST1FfQVBJX0tFWSIpICE9ICIiIHsKCQkJc2VydmljZXMgPSBhcHBlbmQoc2VydmljZXMsICJncm9xIikKCQl9CgkJaWYgb3MuR2V0ZW52KCJPUEVOUk9VVEVSX0FQSV9LRVkiKSAhPSAiIiB7CgkJCXNlcnZpY2VzID0gYXBwZW5kKHNlcnZpY2VzLCAib3BlbnJvdXRlciIpCgkJfQoJCWlmIG9zLkdldGVudigiQ0VSRUJSQVNfQVBJX0tFWSIpICE9ICIiIHsKCQkJc2VydmljZXMgPSBhcHBlbmQoc2VydmljZXMsICJjZXJlYnJhcyIpCgkJfQoJCXJldHVybiBjLkpTT04oZmliZXIuTWFwewoJCQkic3RhdHVzIjogICAgInJlYWR5IiwKCQkJInZlcnNpb24iOiAgIFZlcnNpb24sCgkJCSJzaWduYXR1cmUiOiBIYXNoS2V5KHVpbnQ2NChjaGFsbGVuZ2UpLCBzZWNyZXQpLAoJCQkic2VydmljZXMiOiAgc2VydmljZXMsCgkJfSkKCX0pCgoJLy8g55u05o6l5Luj55CG77yaL2dyb3EvKiDihpIgaHR0cHM6Ly9hcGkuZ3JvcS5jb20vb3BlbmFpLyoKCWFwcC5BbGwoIi9ncm9xLyoiLCBmdW5jKGMgKmZpYmVyLkN0eCkgZXJyb3IgewoJCWFwaUtleSA6PSBvcy5HZXRlbnYoIkdST1FfQVBJX0tFWSIpCgkJaWYgYXBpS2V5ID09ICIiIHsKCQkJcmV0dXJuIGMuU3RhdHVzKDUwMCkuSlNPTihmaWJlci5NYXB7ImVycm9yIjogIkdST1FfQVBJX0tFWSBub3QgY29uZmlndXJlZCJ9KQoJCX0KCQkvLyDms6jmhI/vvJpGaWJlciDnmoQgUHJveHkg5LiN5pSv5oyBIFNTRSDmtYHlvI/vvIzov5nph4znlKjmiYvlhpnpgI/kvKAKCQlwYXRoIDo9IGMuUGF0aCgpW2xlbigiL2dyb3EiKTpdCgkJdGFyZ2V0IDo9ICJodHRwczovL2FwaS5ncm9xLmNvbS9vcGVuYWkiICsgcGF0aCArICI/IiArIHN0cmluZyhjLlJlcXVlc3QoKS5VUkkoKS5RdWVyeVN0cmluZygpKQoJCXJldHVybiBwcm94eVJlcXVlc3QoYywgdGFyZ2V0LCBhcGlLZXkpCgl9KQoKCWFwcC5BbGwoIi9vcGVucm91dGVyLyoiLCBmdW5jKGMgKmZpYmVyLkN0eCkgZXJyb3IgewoJCWFwaUtleSA6PSBvcy5HZXRlbnYoIk9QRU5ST1VURVJfQVBJX0tFWSIpCgkJaWYgYXBpS2V5ID09ICIiIHsKCQkJcmV0dXJuIGMuU3RhdHVzKDUwMCkuSlNPTihmaWJlci5NYXB7ImVycm9yIjogIk9QRU5ST1VURVJfQVBJX0tFWSBub3QgY29uZmlndXJlZCJ9KQoJCX0KCQlwYXRoIDo9IGMuUGF0aCgpW2xlbigiL29wZW5yb3V0ZXIiKTpdCgkJdGFyZ2V0IDo9ICJodHRwczovL29wZW5yb3V0ZXIuYWkvYXBpIiArIHBhdGggKyAiPyIgKyBzdHJpbmcoYy5SZXF1ZXN0KCkuVVJJKCkuUXVlcnlTdHJpbmcoKSkKCQlyZXR1cm4gcHJveHlSZXF1ZXN0KGMsIHRhcmdldCwgYXBpS2V5KQoJfSkKCglhcHAuQWxsKCIvY2VyZWJyYXMvKiIsIGZ1bmMoYyAqZmliZXIuQ3R4KSBlcnJvciB7CgkJYXBpS2V5IDo9IG9zLkdldGVudigiQ0VSRUJSQVNfQVBJX0tFWSIpCgkJaWYgYXBpS2V5ID09ICIiIHsKCQkJcmV0dXJuIGMuU3RhdHVzKDUwMCkuSlNPTihmaWJlci5NYXB7ImVycm9yIjogIkNFUkVCUkFTX0FQSV9LRVkgbm90IGNvbmZpZ3VyZWQifSkKCQl9CgkJcGF0aCA6PSBjLlBhdGgoKVtsZW4oIi9jZXJlYnJhcyIpOl0KCQl0YXJnZXQgOj0gImh0dHBzOi8vYXBpLmNlcmVicmFzLmFpIiArIHBhdGggKyAiPyIgKyBzdHJpbmcoYy5SZXF1ZXN0KCkuVVJJKCkuUXVlcnlTdHJpbmcoKSkKCQlyZXR1cm4gcHJveHlSZXF1ZXN0KGMsIHRhcmdldCwgYXBpS2V5KQoJfSkKCglhcHAuR2V0KCIvIiwgZnVuYyhjICpmaWJlci5DdHgpIGVycm9yIHsKCQlyZXR1cm4gYy5KU09OKGZpYmVyLk1hcHsKCQkJInN0YXR1cyI6ICAgIm9ubGluZSIsCgkJCSJuYW1lIjogICAgICJncm9xLXByb3h5IiwKCQkJInZlcnNpb24iOiAgVmVyc2lvbiwKCQkJInNlcnZpY2VzIjogZW5hYmxlZFNlcnZpY2VzKCksCgkJfSkKCX0pCgoJcG9ydCA6PSBvcy5HZXRlbnYoIlBPUlQiKQoJaWYgcG9ydCA9PSAiIiB7CgkJcG9ydCA9ICIzMDAwIgoJfQoJbG9nLlByaW50ZigiZ3JvcS1wcm94eSAlcyBzdGFydGluZyBvbiBwb3J0ICVzIiwgVmVyc2lvbiwgcG9ydCkKCWxvZy5GYXRhbChhcHAuTGlzdGVuKCI6IiArIHBvcnQpKQp9CgpmdW5jIGVuYWJsZWRTZXJ2aWNlcygpIFtdc3RyaW5nIHsKCXZhciBzIFtdc3RyaW5nCglpZiBvcy5HZXRlbnYoIkdST1FfQVBJX0tFWSIpICE9ICIiIHsKCQlzID0gYXBwZW5kKHMsICJncm9xIikKCX0KCWlmIG9zLkdldGVudigiT1BFTlJPVVRFUl9BUElfS0VZIikgIT0gIiIgewoJCXMgPSBhcHBlbmQocywgIm9wZW5yb3V0ZXIiKQoJfQoJaWYgb3MuR2V0ZW52KCJDRVJFQlJBU19BUElfS0VZIikgIT0gIiIgewoJCXMgPSBhcHBlbmQocywgImNlcmVicmFzIikKCX0KCXJldHVybiBzCn0K
+package main
+
+import (
+	"fmt"
+	"log"
+	"os"
+	"time"
+
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/gofiber/fiber/v2/middleware/limiter"
+	"github.com/gofiber/fiber/v2/middleware/logger"
+	"github.com/joho/godotenv"
+)
+
+const Version = "1.0.0"
+
+// HashKey 纯 Go 实现的安全握手签名（替代原 Plan 9 汇编 Obfuscate）
+// 客户端可对比 signature 是否与服务端一致
+func HashKey(challenge uint64, secret string) string {
+	key := uint64(0)
+	for _, ch := range secret {
+		key += uint64(ch)
+	}
+	return fmt.Sprintf("%x", challenge^key)
+}
+
+func main() {
+	_ = godotenv.Load()
+
+	app := fiber.New(fiber.Config{
+		AppName: "groq-proxy-v" + Version,
+	})
+
+	app.Use(logger.New())
+	app.Use(cors.New())
+
+	maxReqs := 20
+	fmt.Sscanf(os.Getenv("RATE_LIMIT_MAX"), "%d", &maxReqs)
+
+	app.Use(limiter.New(limiter.Config{
+		Max:        maxReqs,
+		Expiration: 1 * time.Minute,
+		KeyGenerator: func(c *fiber.Ctx) string {
+			return c.IP()
+		},
+		LimitReached: func(c *fiber.Ctx) error {
+			return c.Status(429).JSON(fiber.Map{
+				"error":       "Rate limit exceeded",
+				"retry_after": "1 minute",
+			})
+		},
+	}))
+
+	app.Use(func(c *fiber.Ctx) error {
+		secret := os.Getenv("PROXY_SECRET")
+		if secret == "" {
+			return c.Next()
+		}
+		if c.Path() == "/" || c.Path() == "/handshake" || c.Path() == "/version" {
+			return c.Next()
+		}
+		if c.Get("X-GA-Secret") != secret {
+			return c.Status(403).JSON(fiber.Map{"error": "Unauthorized: Invalid GA Secret"})
+		}
+		return c.Next()
+	})
+
+	app.Get("/version", func(c *fiber.Ctx) error {
+		return c.JSON(fiber.Map{"version": Version})
+	})
+
+	app.Get("/handshake", func(c *fiber.Ctx) error {
+		challenge := c.QueryInt("challenge", 0)
+		secret := os.Getenv("PROXY_SECRET")
+		if secret == "" {
+			secret = "GA-DEFAULT-SECRET"
+		}
+		var services []string
+		if os.Getenv("GROQ_API_KEY") != "" {
+			services = append(services, "groq")
+		}
+		if os.Getenv("OPENROUTER_API_KEY") != "" {
+			services = append(services, "openrouter")
+		}
+		if os.Getenv("CEREBRAS_API_KEY") != "" {
+			services = append(services, "cerebras")
+		}
+		return c.JSON(fiber.Map{
+			"status":    "ready",
+			"version":   Version,
+			"signature": HashKey(uint64(challenge), secret),
+			"services":  services,
+		})
+	})
+
+	// 直接代理：/groq/* → https://api.groq.com/openai/*
+	app.All("/groq/*", func(c *fiber.Ctx) error {
+		apiKey := os.Getenv("GROQ_API_KEY")
+		if apiKey == "" {
+			return c.Status(500).JSON(fiber.Map{"error": "GROQ_API_KEY not configured"})
+		}
+		// 注意：Fiber 的 Proxy 不支持 SSE 流式，这里用手写透传
+		path := c.Path()[len("/groq"):]
+		target := "https://api.groq.com/openai" + path + "?" + string(c.Request().URI().QueryString())
+		return proxyRequest(c, target, apiKey)
+	})
+
+	app.All("/openrouter/*", func(c *fiber.Ctx) error {
+		apiKey := os.Getenv("OPENROUTER_API_KEY")
+		if apiKey == "" {
+			return c.Status(500).JSON(fiber.Map{"error": "OPENROUTER_API_KEY not configured"})
+		}
+		path := c.Path()[len("/openrouter"):]
+		target := "https://openrouter.ai/api" + path + "?" + string(c.Request().URI().QueryString())
+		return proxyRequest(c, target, apiKey)
+	})
+
+	app.All("/cerebras/*", func(c *fiber.Ctx) error {
+		apiKey := os.Getenv("CEREBRAS_API_KEY")
+		if apiKey == "" {
+			return c.Status(500).JSON(fiber.Map{"error": "CEREBRAS_API_KEY not configured"})
+		}
+		path := c.Path()[len("/cerebras"):]
+		target := "https://api.cerebras.ai" + path + "?" + string(c.Request().URI().QueryString())
+		return proxyRequest(c, target, apiKey)
+	})
+
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.JSON(fiber.Map{
+			"status":   "online",
+			"name":     "groq-proxy",
+			"version":  Version,
+			"services": enabledServices(),
+		})
+	})
+
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000"
+	}
+	log.Printf("groq-proxy %s starting on port %s", Version, port)
+	log.Fatal(app.Listen(":" + port))
+}
+
+func enabledServices() []string {
+	var s []string
+	if os.Getenv("GROQ_API_KEY") != "" {
+		s = append(s, "groq")
+	}
+	if os.Getenv("OPENROUTER_API_KEY") != "" {
+		s = append(s, "openrouter")
+	}
+	if os.Getenv("CEREBRAS_API_KEY") != "" {
+		s = append(s, "cerebras")
+	}
+	return s
+}
